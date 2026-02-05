@@ -6,6 +6,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $github_token
-  local_dir: build
+  repo: elsalyk/comp2156
+  local_dir: comp2156
   on:
     branch: main
