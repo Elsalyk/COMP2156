@@ -18,23 +18,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
+  "eslintConfig": { "extends": [ "react-app" ] },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [ ">0.2%", "not dead", "not op_mini all" ],
+    "development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
   },
-  "rebuild_timestamp": "Thu Feb 12 07:04:16 EST 2026",
-  "rebuild_nonce": "0.4sefe4qkl2d"
+  "rebuild_at": "Thu Feb 12 15:13:31 EST 2026"
 }
