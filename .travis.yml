@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - "node"  
 script:
-  - npm install --legacy-peer-deps
+  - npm install --no-package-lock
   - npm run build

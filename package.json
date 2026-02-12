@@ -1,13 +1,22 @@
 {
-  "name": "comp2156",
+  "name": "comp2156-lab05",
   "version": "1.0.0",
-  "description": "[![Build Status](https://app.travis-ci.com/Elsalyk/COMP2156.svg?token=tgbte9tSFtsG3biqUwgq&branch=main)](https://app.travis-ci.com/Elsalyk/COMP2156)",
-  "main": "index.js",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\"",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "description": "[![Build Status](https://app.travis-ci.com/Elsalyk/COMP2156.svg?token=tgbte9tSFtsG3biqUwgq&branch=main)](https://app.travis-ci.com/Elsalyk/COMP2156)",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^27.5.1"
   },
   "repository": {
     "type": "git",
@@ -19,15 +28,6 @@
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Elsalyk/COMP2156/issues"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^0.0.0",
-    "web-vitals": "^2.1.4"
   },
   "eslintConfig": {
     "extends": [
