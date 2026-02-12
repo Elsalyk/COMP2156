@@ -4,7 +4,9 @@ node_js:
 env:
   global:
     - NODE_OPTIONS=--openssl-legacy-provider
+    - CI=false
 script:
   - npm install --no-package-lock
   - npx react-scripts build
+
   
