@@ -1,12 +1,10 @@
 language: node_js
 node_js:
-  - "20"  
+  - "18"
 env:
   global:
     - NODE_OPTIONS=--openssl-legacy-provider
     - CI=false
 script:
-  - npm install --no-package-lock
-  - npx react-scripts build
-
-  
+  - npm install
+  - npm run build
