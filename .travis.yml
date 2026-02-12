@@ -5,7 +5,6 @@ env:
   global:
     - NODE_OPTIONS=--openssl-legacy-provider
     - CI=false
-install:
-  - npm install
 script:
-  - npm run build
+  - npm install
+  - ./node_modules/.bin/react-scripts build
