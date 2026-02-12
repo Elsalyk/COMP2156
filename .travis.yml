@@ -5,6 +5,9 @@ env:
   global:
     - NODE_OPTIONS=--openssl-legacy-provider
     - CI=false
-script:
+
+install:
   - npm install
+
+script:
   - npm run build
