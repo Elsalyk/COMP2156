@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "25.6.0"  
+  - "node"  
 script:
-  - npm install  
+  - npm install --legacy-peer-deps
   - npm run build
