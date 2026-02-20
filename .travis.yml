@@ -1,12 +1,22 @@
 language: node_js
 node_js:
-  - "20"  
-env:
-  global:
-    - NODE_OPTIONS=--openssl-legacy-provider
-    - CI=false
+  - "18"
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+  - npm install -g yarn
 script:
-  - npm install --no-package-lock
-  - npx react-scripts build
-
-  
+  - yarn build
+  - mv build/index.html build/404.html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master
