@@ -4,6 +4,7 @@ node_js:
 branches:
   only:
     - main
+    - dep-inclusions
 cache:
   directories:
     - node_modules
